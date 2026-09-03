@@ -184,15 +184,15 @@ def two_panel_figure(image, recorded, vanishing_points, vanishing_line, title):
 ##       handout names as an acceptable alternative to GIMP.
 
 RECORDED_TILES = {
-    "A  tile rows":      [((0, 0), (0, 0)),
-                          ((0, 0), (0, 0)),
-                          ((0, 0), (0, 0))],
-    "B  tile columns":   [((0, 0), (0, 0)),
-                          ((0, 0), (0, 0)),
-                          ((0, 0), (0, 0))],
-    "C  tile diagonals": [((0, 0), (0, 0)),
-                          ((0, 0), (0, 0)),
-                          ((0, 0), (0, 0))],
+    "A  tile rows":       [((579.2, 383.5), (909.4, 508.0)),
+                           ((510.6, 571.8), (1119.9, 783.9)),
+                           ((662.1, 160.2), (773.8, 209.7))],
+    "B  tile columns":    [((172.4, 450.5), (418.1, 227.2)),
+                           ((670.1, 624.4), (705.2, 338.9)),
+                           ((1446.9, 748.8), (1118.3, 366.0))],
+    "C  tile diagonals":  [((451.6, 739.3), (1057.7, 645.1)),
+                           ((119.8, 303.8), (872.7, 381.9)),
+                           ((848.7, 302.2), (1009.9, 327.7))],
 }
 
 
@@ -329,15 +329,15 @@ def analyse_families(image, recorded, label, centre, figure_prefix):
 MY_PHOTO = "myphoto.jpg"
 
 RECORDED_MY_PHOTO = {
-    "A  first family":  [((0, 0), (0, 0)),
-                         ((0, 0), (0, 0)),
-                         ((0, 0), (0, 0))],
-    "B  second family": [((0, 0), (0, 0)),
-                         ((0, 0), (0, 0)),
-                         ((0, 0), (0, 0))],
-    "C  third family":  [((0, 0), (0, 0)),
-                         ((0, 0), (0, 0)),
-                         ((0, 0), (0, 0))],
+    "A  first family":   [((2440.1, 882.2), (3146.4, 856.4)),
+                          ((2185.3, 1704.6), (3298.0, 1711.1)),
+                          ((3114.1, 640.3), (3768.8, 592.0))],
+    "B  second family":  [((3207.7, 1182.2), (3085.1, 463.0)),
+                          ((3643.1, 424.3), (4607.4, 1714.3)),
+                          ((2559.4, 504.9), (2501.4, 669.4))],
+    "C  third family":   [((3207.7, 1182.2), (3768.8, 595.2)),
+                          ((4230.0, 375.9), (3933.3, 808.1)),
+                          ((3117.4, 650.0), (3626.9, 417.8))],
 }
 
 
@@ -390,8 +390,10 @@ def task_1():
 ##       meets the table.  Points from the inner ring, where the glaze changes
 ##       shade, are a different and smaller circle and are excluded.
 
-RECORDED_RIM = np.array([[0, 0], [0, 0], [0, 0], [0, 0],
-                         [0, 0], [0, 0], [0, 0], [0, 0]], dtype=float)
+RECORDED_RIM = np.array([[515.4, 592.5], [665.3, 479.3],
+                         [848.7, 418.6], [1022.6, 425.0],
+                         [1111.9, 559.0], [965.2, 707.4],
+                         [778.6, 775.9], [539.3, 760.0]], dtype=float)
 
 
 def fit_conic(points):
